@@ -17,7 +17,7 @@
   overflow-x: hidden;
 }
 
-/* Animated oceanic background for section */
+
 .projects-page::before {
   content: '';
   position: fixed;
@@ -188,7 +188,6 @@
   transform: translateX(4px) scale(1.1);
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .projects-header h1 {
     font-size: 2rem;
@@ -207,7 +206,7 @@
   }
 }
 
-/* Subtle floating animation for icons */
+
 @keyframes float-icon {
   0%, 100% { transform: translateY(0);}
   50% { transform: translateY(-6px);}
@@ -216,12 +215,12 @@
   animation: float-icon 4s ease-in-out infinite;
 }
 
-/* Add a glowing border on hover */
+
 .project-card:hover {
   box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.15), 0 16px 40px rgba(34, 211, 238, 0.18);
 }
 
-/* Subtle gradient line under header */
+
 .projects-header h1::after {
   content: '';
   display: block;
@@ -232,12 +231,10 @@
   background: linear-gradient(90deg, transparent, var(--aqua), transparent);
 }
 
-/* Add a soft glow to the grid on hover */
 .projects-grid:hover .project-card {
   filter: brightness(1.04) drop-shadow(0 0 12px #22d3ee33);
 }
 
-/* Make sure the page is scrollable on mobile */
 @media (max-width: 600px) {
   .projects-page {
     padding: 40px 0 20px 0;

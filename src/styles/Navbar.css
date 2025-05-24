@@ -15,7 +15,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Animated background */
+
 .navbar::before {
   content: '';
   position: absolute;
@@ -30,7 +30,7 @@
   opacity: 0.9;
 }
 
-/* Animated lines effect */
+
 .navbar::after {
   content: '';
   position: absolute;

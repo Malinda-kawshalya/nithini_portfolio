@@ -1,5 +1,5 @@
 
-/* Base Variables */
+
 :root {
   --ocean-blue: #0d253f;
   --deep-blue: #1a374d;
@@ -12,7 +12,7 @@
   --wave-shadow: rgba(0, 0, 0, 0.2);
 }
 
-/* Page Styles */
+
 .service-page {
   min-height: 100vh;
   width: 100%;
@@ -24,7 +24,6 @@
   color: var(--light-text);
 }
 
-/* Animated Background - same as homepage */
 .animated-bg {
   position: fixed;
   top: 0; left: 0;
@@ -76,7 +75,6 @@
   100% { transform: translateX(-25vw); }
 }
 
-/* Header Styles */
 .services-header {
   text-align: center;
   padding: 40px 20px 20px;
@@ -107,7 +105,6 @@
   50% { transform: scale(1.05); opacity: 0.9; }
 }
 
-/* Services Container */
 .services-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -123,7 +120,6 @@
   margin-top: 30px;
 }
 
-/* Service Card */
 .service-card {
   background: rgba(22, 78, 99, 0.85);
   backdrop-filter: blur(12px);
@@ -163,7 +159,6 @@
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(34, 211, 238, 0.3);
 }
 
-/* Service Icon/Emoji */
 .service-icon-container {
   display: flex;
   justify-content: center;
@@ -179,7 +174,7 @@
 }
 
 .service-emoji {
-  font-size: 2.5rem; /* Size for emoji */
+  font-size: 2.5rem; 
   transition: transform 0.3s ease;
 }
 
@@ -192,7 +187,6 @@
   transform: scale(1.15);
 }
 
-/* Service Content */
 .service-title {
   font-size: 1.5rem;
   color: var(--aqua);
@@ -209,7 +203,6 @@
   margin-bottom: 20px;
 }
 
-/* Tech Tags */
 .service-tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -232,7 +225,6 @@
   background: rgba(34, 211, 238, 0.25);
 }
 
-/* Service CTA Button */
 .service-cta {
   display: flex;
   align-items: center;
@@ -263,7 +255,6 @@
   transform: translateX(4px);
 }
 
-/* Animated background */
 .service-card::before {
   content: '';
   position: absolute;
@@ -279,7 +270,6 @@
   border-radius: 20px;
 }
 
-/* Animated bubbles effect */
 .service-card::after {
   content: '';
   position: absolute;
@@ -307,7 +297,6 @@
   100% { background-position: 40px 40px, 55px 55px; }
 }
 
-/* Call to Action Section */
 .services-cta-section {
   margin-top: 60px;
   padding: 40px;
@@ -380,7 +369,7 @@
   transform: translateX(4px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
   .services-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

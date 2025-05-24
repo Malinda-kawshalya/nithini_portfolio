@@ -14,7 +14,7 @@
   overflow-x: hidden;
 }
 
-/* Animated background */
+
 .footer::before {
   content: '';
   position: absolute;
@@ -29,7 +29,7 @@
   opacity: 0.9;
 }
 
-/* Animated lines effect */
+
 .footer::after {
   content: '';
   position: absolute;
@@ -219,7 +219,7 @@
   50% { transform: scale(1.2);}
 }
 
-/* Responsive Design */
+
 @media (max-width: 1000px) {
   .footer-content.advanced {
     grid-template-columns: 1fr 1fr;

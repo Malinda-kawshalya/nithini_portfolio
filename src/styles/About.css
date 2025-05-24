@@ -11,7 +11,7 @@
   --wave-shadow: rgba(0, 0, 0, 0.2);
 }
 
-/* Page Styles */
+
 .about-page {
   min-height: 100vh;
   width: 100vw;
@@ -22,7 +22,7 @@
   color: var(--light-text);
 }
 
-/* Animated Background - same as homepage */
+
 .animated-bg {
   position: fixed;
   top: 0; left: 0;
@@ -74,7 +74,7 @@
   100% { transform: translateX(-25vw); }
 }
 
-/* Header Styles */
+
 .about-header {
   text-align: center;
   padding: 40px 20px;
@@ -105,7 +105,7 @@
   50% { transform: scale(1.05); opacity: 0.9; }
 }
 
-/* Section Styles */
+
 .about-section {
   background: rgba(22, 78, 99, 0.85);
   backdrop-filter: blur(12px);
@@ -122,7 +122,7 @@
   z-index: 4;
 }
 
-/* Animated background */
+
 .about-section::before {
   content: '';
   position: absolute;
@@ -172,7 +172,7 @@
   transform: translateY(0);
 }
 
-/* Profile Section */
+
 .profile-section .section-content {
   display: flex;
   align-items: center;
@@ -213,7 +213,7 @@
     0 0 50px rgba(34, 211, 238, 0.5) inset;
 }
 
-/* Add a ripple effect around the image */
+
 .profile-image-container::before {
   content: '';
   position: absolute;
@@ -341,7 +341,7 @@
   transform: translateY(3px);
 }
 
-/* Education Timeline */
+
 .timeline {
   position: relative;
   max-width: 800px;
@@ -416,7 +416,7 @@
   margin-bottom: 15px;
 }
 
-/* Skills Section */
+
 .skills-category {
   margin-bottom: 30px;
 }
@@ -467,7 +467,7 @@
   to { width: 100%; }
 }
 
-/* Interests Section */
+
 .interests-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -507,7 +507,7 @@
   line-height: 1.6;
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
   .about-header h1 {
     font-size: 2.5rem;

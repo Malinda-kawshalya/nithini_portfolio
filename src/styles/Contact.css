@@ -1,4 +1,4 @@
-/* Base Variables - Matching Home Theme */
+
 :root {
   --ocean-blue: #0d253f;
   --deep-blue: #1a374d;
@@ -11,7 +11,7 @@
   --wave-shadow: rgba(0, 0, 0, 0.2);
 }
 
-/* Page Styles */
+
 .contact-page {
   min-height: 100vh;
   width: 100%;
@@ -23,7 +23,7 @@
   color: var(--light-text);
 }
 
-/* Animated Background - same as homepage */
+
 .animated-bg {
   position: fixed;
   top: 0; left: 0;
@@ -75,7 +75,7 @@
   100% { transform: translateX(-25vw); }
 }
 
-/* Header Styles */
+
 .contact-header {
   text-align: center;
   padding: 40px 20px 20px;
@@ -106,7 +106,7 @@
   50% { transform: scale(1.05); opacity: 0.9; }
 }
 
-/* Contact Container */
+
 .contact-container {
   max-width: 1200px;
   margin: 30px auto;
@@ -128,7 +128,7 @@
   flex-wrap: wrap;
 }
 
-/* Animated background */
+
 .contact-content::before {
   content: '';
   position: absolute;
@@ -143,7 +143,7 @@
   opacity: 0.9;
 }
 
-/* Animated bubbles effect */
+
 .contact-content::after {
   content: '';
   position: absolute;
@@ -170,7 +170,6 @@
   100% { background-position: 40px 40px, 55px 55px; }
 }
 
-/* Contact Sections */
 .contact-info-section,
 .contact-form-section {
   padding: 40px;
@@ -213,7 +212,7 @@
   box-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
 }
 
-/* Contact Info Styles */
+
 .contact-text {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -277,7 +276,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Form Styles */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -340,7 +339,7 @@ input:focus, textarea:focus {
   resize: vertical;
 }
 
-/* Submit Button */
+
 .submit-button {
   background: linear-gradient(45deg, var(--aqua), var(--glow));
   border: none;
@@ -369,7 +368,6 @@ input:focus, textarea:focus {
   cursor: not-allowed;
 }
 
-/* Loading Animation */
 .loading-indicator {
   display: flex;
   gap: 6px;
@@ -398,7 +396,7 @@ input:focus, textarea:focus {
   50% { transform: scale(1.4); opacity: 1; }
 }
 
-/* Success / Error Messages */
+
 .success-message,
 .error-message {
   padding: 15px;
@@ -433,7 +431,7 @@ input:focus, textarea:focus {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
   .contact-header h1 {
     font-size: 2.5rem;
