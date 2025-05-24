@@ -43,7 +43,7 @@ function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Hi, I'm Nithini</h1>
+          <h1>Hi, I'm Nithiniii</h1>
           <p>Dive into my ocean of creativity and technical expertise.</p>
           <button onClick={() => scrollToSection(aboutRef)} className="cta-button">
             Explore More
