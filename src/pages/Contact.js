@@ -29,12 +29,12 @@ function Contact() {
     setFormStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      // Make sure form field names match EmailJS template variables
+      
       await emailjs.sendForm(
         'service_kods9sb', 
-        'template_tvo9sfy', 
+        'template_llkyfqk', 
         formRef.current, 
-        'Ueo9b8mgE_Mxj_TEG'
+        'F99SlF2BL6Q54bkZ_'
       );
       
       setFormStatus({ submitting: false, submitted: true, error: null });
