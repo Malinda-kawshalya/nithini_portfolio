@@ -1,0 +1,255 @@
+:root {
+  --ocean-blue: #0d253f;
+  --deep-blue: #1a374d;
+  --mid-blue: #164e63;
+  --aqua: #22d3ee;
+  --glow: #4fc3f7;
+  --light-text: rgba(255,255,255,0.92);
+}
+
+.projects-page {
+  min-height: 100vh;
+  padding: 80px 0 40px 0;
+  background: radial-gradient(ellipse at 60% 0%, #b3e0f7 0%, #164e63 40%, #0a1128 100%);
+  color: var(--light-text);
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+/* Animated oceanic background for section */
+.projects-page::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 60% 0%, #b3e0f7 0%, #164e63 40%, #0a1128 100%);
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.projects-page::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.05) 2px, transparent 3px),
+                    radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 2px);
+  background-size: 40px 40px, 30px 30px;
+  background-position: 0 0, 15px 15px;
+  z-index: -1;
+  animation: bubble-wave 20s ease-in-out infinite;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@keyframes bubble-wave {
+  0% { background-position: 0 0, 15px 15px; }
+  100% { background-position: 40px 40px, 55px 55px; }
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-header h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  text-shadow: 0 2px 18px var(--aqua), 0 0 30px rgba(34, 211, 238, 0.2);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  animation: floating-title 5s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes floating-title {
+  0%, 100% { transform: translateY(0) scale(1);}
+  50% { transform: translateY(-10px) scale(1.03);}
+}
+
+.projects-subtitle {
+  font-size: 1.2rem;
+  color: var(--light-text);
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 36px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  margin-top: 36px;
+}
+
+.project-card {
+  background: rgba(22, 78, 99, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 0 0 1px var(--aqua, #22d3ee, 0.08);
+  padding: 36px 28px 28px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(.17,.67,.83,.67), box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: #e0f7fa;
+  animation: float-card 6s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * 0.2s);
+}
+
+@keyframes float-card {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-10px);}
+}
+
+.project-card:hover {
+  transform: translateY(-14px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(34, 211, 238, 0.18), 0 0 30px var(--aqua, #22d3ee, 0.18);
+  border-color: var(--aqua);
+  background: rgba(34, 211, 238, 0.13);
+}
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.project-icon {
+  width: 54px;
+  height: 54px;
+  background: rgba(34, 211, 238, 0.13);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px #22d3ee33;
+  border: 2px solid rgba(34, 211, 238, 0.18);
+  transition: background 0.3s;
+  filter: drop-shadow(0 0 12px #22d3ee44);
+}
+
+.project-card:hover .project-icon {
+  background: rgba(34, 211, 238, 0.22);
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  color: var(--aqua);
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(34, 211, 238, 0.2);
+}
+
+.project-desc {
+  font-size: 1.08rem;
+  color: #e0f7fa;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.project-tech {
+  font-size: 0.98rem;
+  color: #b3e0f7;
+  margin-bottom: 8px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--aqua);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.2s;
+}
+
+.project-link:hover {
+  color: #fff;
+}
+
+.project-link svg {
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.project-link:hover svg {
+  transform: translateX(4px) scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 8px;
+  }
+  .project-card {
+    padding: 22px 12px 18px 12px;
+  }
+  .project-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Subtle floating animation for icons */
+@keyframes float-icon {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-6px);}
+}
+.project-icon {
+  animation: float-icon 4s ease-in-out infinite;
+}
+
+/* Add a glowing border on hover */
+.project-card:hover {
+  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.15), 0 16px 40px rgba(34, 211, 238, 0.18);
+}
+
+/* Subtle gradient line under header */
+.projects-header h1::after {
+  content: '';
+  display: block;
+  margin: 18px auto 0 auto;
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--aqua), transparent);
+}
+
+/* Add a soft glow to the grid on hover */
+.projects-grid:hover .project-card {
+  filter: brightness(1.04) drop-shadow(0 0 12px #22d3ee33);
+}
+
+/* Make sure the page is scrollable on mobile */
+@media (max-width: 600px) {
+  .projects-page {
+    padding: 40px 0 20px 0;
+  }
+  .projects-header h1 {
+    font-size: 1.4rem;
+  }
+  .projects-grid {
+    gap: 18px;
+  }
+  .project-card {
+    padding: 14px 6px 12px 6px;
+    border-radius: 16px;
+  }
+}
