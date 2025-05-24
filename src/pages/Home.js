@@ -3,6 +3,7 @@ import starfish from '../assets/starfish.png';
 import '../styles/Home.css';
 import { Link } from 'react-router-dom';
 import profileImage from '../assets/me.png';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const aboutRef = useRef(null);
@@ -10,6 +11,7 @@ function Home() {
   const projectsRef = useRef(null);
   const educationRef = useRef(null);
   const contactRef = useRef(null);
+  const navigate = useNavigate();
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -45,7 +47,7 @@ function Home() {
         <div className="hero-content">
           <h1>Hi, I'm Nithini</h1>
           <p>Dive into my ocean of creativity and technical expertise.</p>
-          <button onClick={() => scrollToSection(aboutRef)} className="cta-button">
+          <button onClick={() => navigate('/about')} className="cta-button">
             Explore More
           </button>
         </div>

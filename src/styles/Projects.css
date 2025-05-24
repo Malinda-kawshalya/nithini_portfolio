@@ -188,6 +188,7 @@
   transform: translateX(4px) scale(1.1);
 }
 
+
 @media (max-width: 900px) {
   .projects-header h1 {
     font-size: 2rem;
@@ -231,9 +232,11 @@
   background: linear-gradient(90deg, transparent, var(--aqua), transparent);
 }
 
+
 .projects-grid:hover .project-card {
   filter: brightness(1.04) drop-shadow(0 0 12px #22d3ee33);
 }
+
 
 @media (max-width: 600px) {
   .projects-page {

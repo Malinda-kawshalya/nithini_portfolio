@@ -92,20 +92,6 @@ function Skills() {
           <h2>Skills Overview</h2>
           <p>With a strong foundation in frontend development and design, I specialize in creating responsive, user-friendly web applications. My technical skills are complemented by soft skills that enable effective collaboration and problem-solving.</p>
           
-          <div className="overview-stats">
-            <div className="stat-item">
-              <div className="stat-value">2+</div>
-              <div className="stat-label">Years of Experience</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-value">10+</div>
-              <div className="stat-label">Projects Completed</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-value">10+</div>
-              <div className="stat-label">Technologies Mastered</div>
-            </div>
-          </div>
         </div>
       </section>
       
